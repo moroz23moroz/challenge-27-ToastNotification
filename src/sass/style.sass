@@ -2,55 +2,46 @@
 @import 'base/fonts'
 @import 'base/variables'
 
-html,
-body
-    height: 100%
-
 body
     margin: 0
+    overflow: hidden
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
-    // background: $dark-color
-    // font-family: $lato
-    // color: $main-color
+    background: rebeccapurple
+    font-family: $poppins, sans-serif
+    height: 100vh
 
 *
     box-sizing: border-box
     margin: 0
 
-html
-    scroll-behavior: smooth
-
-button
-    padding: 0
-    background-color: transparent
+.bts
+    background-color: whitesmoke
+    color: rebeccapurple
+    font-family: inherit
+    font-weight: bold
+    padding: 1rem
+    border-radius: 5px
     border: none
+    cursor: pointer
+    &:focus
+        outline: none
+    &:active
+        transform: scale(0.98)
 
-h1, h2, h3, h4
-    margin: 0
-    font-weight: normal
+#toasts
+    position: fixed
+    bottom: 10px
+    right: 10px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
 
-img
-    width: auto
-    max-width: 100%
-    height: auto
-
-iframe, img, svg, video
-    max-width: 100%
-    vertical-align: top
-    height: auto
-
-p
-    margin: 0
-
-ul
-    margin: 0
-    padding-left: 0
-
-li
-    list-style-type: none
-
-a
-    text-decoration: none
+.toast
+    background-color: whitesmoke
+    color: rebeccapurple
+    border-radius: 5px
+    padding: 1rem 2rem
+    margin: 0.5rem
